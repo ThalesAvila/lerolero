@@ -2,9 +2,15 @@ import React from "react";
 import styles from "./lerolero.module.css";
 
 const Lerolero = () => {
+  const handleClick = () => {
+    console.log("CLICOU");
+  };
   return (
-    <article className={styles.container}>
-      <blockquote>Imagination is more important than knowledge</blockquote>
+    <article className={styles.container} onClick={handleClick}>
+      <blockquote>
+        Nunca deixe ninguém te dizer que não consegue. Diga você mesmo: Não
+        consigo!
+      </blockquote>
     </article>
   );
 };
